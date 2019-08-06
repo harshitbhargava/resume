@@ -1,0 +1,130 @@
+<!--
+  Generated template for the FormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+
+  <ion-list scroll="true">
+      
+          <div class="bar bar-header">
+              <h1 class="title" style="text-align: center">Career Objective</h1>
+            </div>
+            <ion-item>
+        <ion-textarea placeholder="Enter your Career Objective" [(ngModel)]="forms.career"></ion-textarea>
+      </ion-item>
+      <br>
+      <div class="bar bar-header">
+          <h1 class="title" style="text-align: center">PERSONAL DETAILS</h1>
+        </div>
+    <ion-item>
+      <ion-label color="primary">Name:</ion-label>
+      <ion-input placeholder="Enter your full name" [(ngModel)]="forms.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Gender:</ion-label>
+      <ion-select interface="popover" [(ngModel)]="forms.gender">
+        <ion-option>Male</ion-option>
+        <ion-option>Female</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Age:</ion-label>
+      <ion-input placeholder="Enter your present age (Eg. 20 years)" [(ngModel)]="forms.age"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Contact Number:</ion-label>
+      <ion-input type="number" placeholder="Enter your Contact number" [(ngModel)]="forms.contact"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Email ID:</ion-label>
+      <ion-input placeholder="Enter your Email ID" [(ngModel)]="forms.emailid"></ion-input>[(ngModel)]
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">City:</ion-label>
+      <ion-input placeholder="Enter your current city" [(ngModel)]="forms.city"></ion-input>
+    </ion-item>
+  <br>
+  
+    <div class="bar bar-header">
+      <h1 class="title" style="text-align: center">EDUCATIONAL DETAILS</h1>
+    </div>
+  
+    <ion-item>
+      <ion-label color="primary">High School percentage:</ion-label>
+    <ion-input  placeholder="Eg. 92.2%" [(ngModel)]="forms.percentage" ></ion-input>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label color="primary">High School name:</ion-label>
+      <ion-input placeholder="Enter name of your high School" [(ngModel)]="forms.schoolname"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">College:</ion-label>
+      <ion-input placeholder="Enter your College name" [(ngModel)]="forms.collegename"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Graduation Year:</ion-label>
+      <ion-select interface="popover" [(ngModel)]="forms.graduationyear">
+        <ion-option>2018</ion-option>
+        <ion-option>2019</ion-option>
+        <ion-option>2020</ion-option>
+        <ion-option>2021</ion-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+        <ion-label color="primary">Projects:</ion-label>
+      <ion-textarea placeholder="Enter a description of your projects (Give proper spacing)" [(ngModel)]="forms.projects"></ion-textarea>
+    </ion-item>
+  
+  
+  <ion-item>
+    <ion-label color="primary">Trainings and Certification:</ion-label>
+  <ion-textarea placeholder="Trainings details" [(ngModel)]="forms.tandc"></ion-textarea>
+  </ion-item>
+  
+  
+  <ion-item>
+    <ion-label color="primary">Position of Responsibility:</ion-label>
+  <ion-textarea placeholder="Add your position of responsibility"[(ngModel)]="forms.position"></ion-textarea>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label color="primary">Skills:</ion-label>
+      <ion-input placeholder="for eg. C++,Java" [(ngModel)]="forms.skills"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-label color="primary">Additional Information:</ion-label>
+      <ion-textarea placeholder="additional info" [(ngModel)]="forms.additional"></ion-textarea>
+      </ion-item>
+      <br>
+      <div class="bar bar-header">
+          <h1 class="title" style="text-align: center">References</h1>
+        </div>
+        <ion-item>
+    <ion-textarea placeholder="Give details about your references(optional)" [(ngModel)]="forms.references"></ion-textarea>
+  </ion-item>
+  <br>
+  
+  <div style="text-align: center">
+      <button ion-button color="secondary" (click)="create()">Create PDF</button> 
+      
+  </div>
+   
+  <div style="text-align: center">
+      <button ion-button color="secondary" (click)="generate()" [disabled]="!pdfObj">Generate PDF</button> 
+      
+  </div>
+  </ion-list>
+  </ion-content>

@@ -1,0 +1,44 @@
+
+
+
+page-home{
+
+    .button2 {
+        position: absolute;
+        top: 40%;
+        // vertical-align:middle;
+        display:flex;
+        color: #fff;
+        background-color: rgb(50, 219, 100);
+        background: rgba(50,219,100,0.5);
+        
+    }
+    .button1 {
+        position: absolute;
+        // bottom: 220px;
+        // vertical-align:middle;
+        top: 50%;
+        display:flex;
+        color: #fff;
+        background-color: rgb(50, 219, 100);
+        background: rgba(50,219,100,0.5);
+    }
+    
+
+video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+}
+.box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}

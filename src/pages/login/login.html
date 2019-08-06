@@ -1,0 +1,55 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!-- <script>
+  $.post("http://localhost:8080/login",function(response){
+    console.log("success");
+    document.write(JSON.stringify(response));
+  })
+</script> -->
+
+<ion-header>
+    <ion-navbar>
+      <ion-title align="center">WELCOME</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="background">
+      <ion-grid style="height: 100%">
+          <ion-row justify-content-center align-items-center style="height: 100%">
+  
+      <ion-card>
+           
+        
+          <ion-card-content>
+            
+              <ion-list>
+  
+                  <ion-item>
+                    <ion-label>Email ID:</ion-label>
+                    <ion-input type="text" [(ngModel)]="login.emailid"></ion-input>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="password"[(ngModel)]="login.password"></ion-input>
+                  </ion-item>
+                
+                  
+                </ion-list>
+                
+                <div style="text-align: center">
+                  <button ion-button color="secondary" round   (click)="login1(body)">LOG IN</button> 
+                  
+              </div>
+          </ion-card-content>
+        </ion-card>
+        </ion-row>
+        </ion-grid>
+        </ion-content>
+  
